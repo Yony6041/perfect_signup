@@ -1,6 +1,8 @@
 import React from 'react';
 import {makeStyles, withStyles} from '@material-ui/core';
 
+
+// this is a different way to create styles inside a component without using an external css
 const style = {
   sideMenu: {
     display:'flex',
@@ -15,8 +17,6 @@ const style = {
 
 const SideMenu = (props) => {
   const {classes} = props;
-  console.log(classes);
-
   return (
     <div className={classes.sideMenu}>
 
@@ -24,6 +24,9 @@ const SideMenu = (props) => {
   );
 };
 
+// here we're passing a higher order function to
+// pass on the styles.
+// with styles recieves a style and it applies it to the component you pass on.
 
 export default withStyles(style)(SideMenu);
 
