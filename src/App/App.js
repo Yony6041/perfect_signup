@@ -1,9 +1,8 @@
 import { ThemeProvider } from '@material-ui/core/styles';
-import SideMenu from  '../components/SideMenu.js';
+import SideMenu from  '../components/SideMenu';
 import {CssBaseline, makeStyles, createMuiTheme} from '@material-ui/core';
 import Header from '../components/Header';
-import PeopleOutlineIcon from '@material-ui/icons/PeopleOutline';
-import PageHeader from '../components/PageHeader';
+import Employees from '../pages/Employees/Employees';
 
 // this theme colors created by createMuiTheme will affect all pre-made classes
 // inside the materialUI components 
@@ -50,11 +49,7 @@ function App() {
       <SideMenu/>
       <div className={classes.appMain}> 
         <Header/>
-        <PageHeader
-        title='Page Header'
-        subTitle="Page description"
-        icon ={<PeopleOutlineIcon fontSize='large'/>}
-        />
+        <Employees/>
       </div>
       <CssBaseline/>
     </ThemeProvider>
