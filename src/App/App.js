@@ -5,7 +5,7 @@ import Header from '../components/Header';
 import Employees from '../pages/Employees/Employees';
 
 // this theme colors created by createMuiTheme will affect all pre-made classes
-// inside the materialUI components 
+// inside the materialUI components` 
 const theme = createMuiTheme({
   palette:{
     primary: {
